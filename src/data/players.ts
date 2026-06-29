@@ -1,7 +1,6 @@
 import player1 from "@/assets/player-1.png";
 import player2 from "@/assets/player-2.png";
 import player3 from "@/assets/player-3.png";
-import player4 from "@/assets/player-4.jpeg";
 import amoah from "@/assets/Amoah.jpg";
 import francisca from "@/assets/Francisca.png";
 import kelvin from "@/assets/Kelvin.jpg";
@@ -86,7 +85,7 @@ export const players: Player[] = [
       preferredFoot: "Both",
       languages: ["English"],
       contractUntil: "Ongoing",
-      marketValue: "N/A",
+      marketValue: "50.000",
     },
     transfers: [
       { season: "2023", from: "Youth Football", to: "Kumasi Angels", type: "Youth" },
@@ -153,7 +152,7 @@ export const players: Player[] = [
       preferredFoot: "Right",
       languages: ["English"],
       contractUntil: "Ongoing",
-      marketValue: "$20,000",
+      marketValue: "$25,000",
     },
     transfers: [
       { season: "2022", from: "Blessed Kickers FC", to: "Real Zaragoza", type: "Youth" },
@@ -163,40 +162,6 @@ export const players: Player[] = [
       { club: "Blessed Kickers FC", seasons: "2022", appearances: 0, goals: 0, assists: 0 },
       { club: "Real Zaragoza", seasons: "2022–2023", appearances: 0, goals: 0, assists: 0 },
       { club: "Memphis FC", seasons: "2023–Present", appearances: 14, goals: 2, assists: 1 },
-    ],
-  },
-  {
-    id: "asante-collins",
-    name: "Asante Collins",
-    position: "Forward",
-    nationality: "Ghanaian",
-    age: 18,
-    image: player4,
-    goals: 20,
-    assists: 14,
-    appearances: 24,
-    bio: "A dynamic young Ghanaian forward with an eye for goal and excellent creative instincts. Known for his pace, intelligent movement, and ability to influence games in the final third, Asante has scored 20 goals and contributed 14 assists across 24 career appearances.",
-    profile: "Asante Collins is a highly productive forward whose goal contribution record speaks for itself — 20 goals and 14 assists across just 24 career games for Boako Nationals, Memphis FC, and Kofi's FC. His excellent dribbling, accurate shooting from inside and outside the box, and dangerous 1v1 ability make him a constant threat in the final third. Tactically, he times attacking runs very well, reads spaces effectively, and thrives in pressing systems. Off the ball, his strong link-up play and team-first mindset make him a complete forward. Asante is highly determined, composed in finishing situations, and carries a strong competitive mentality. He is exclusively represented by Solokra Management Firm. Contact: solokramanagementfirm1@gmail.com",
-    cvUrl: "/cv/asante-collins.pdf",
-    personalDetails: {
-      fullName: "Asante Collins",
-      dateOfBirth: "2nd June 2006",
-      placeOfBirth: "Ghana",
-      height: "N/A",
-      weight: "N/A",
-      preferredFoot: "Right",
-      languages: ["English"],
-      contractUntil: "Ongoing",
-      marketValue: "$25,000",
-    },
-    transfers: [
-      { season: "2022", from: "Boako Nationals", to: "Memphis FC", type: "Youth" },
-      { season: "2023", from: "Memphis FC", to: "Kofi's FC", type: "Permanent" },
-    ],
-    careerHistory: [
-      { club: "Boako Nationals", seasons: "2022", appearances: 7, goals: 9, assists: 5 },
-      { club: "Memphis FC", seasons: "2022–2023", appearances: 12, goals: 8, assists: 9 },
-      { club: "Kofi's FC", seasons: "2023–Present", appearances: 5, goals: 3, assists: 0 },
     ],
   },
   {
@@ -221,7 +186,7 @@ export const players: Player[] = [
       preferredFoot: "Right",
       languages: ["English"],
       contractUntil: "Ongoing",
-      marketValue: "$25,000",
+      marketValue: "$35,000",
     },
     transfers: [
       { season: "2023", from: "Youth Football", to: "Adams FC", type: "Youth" },
@@ -233,7 +198,7 @@ export const players: Player[] = [
   {
     id: "francisca-kwarteng",
     name: "Francisca Kwarteng",
-    position: "Defender",
+    position: "Midfielder",
     nationality: "Ghanaian",
     age: 23,
     image: francisca,
@@ -241,7 +206,7 @@ export const players: Player[] = [
     assists: 3,
     appearances: 8,
     bio: "A versatile and disciplined footballer known for strong defensive awareness, tactical intelligence, and excellent ball distribution. Francisca excels in both right-back and defensive midfielder roles, offering composure under pressure, effective tackling, and precise passing.",
-    profile: "Francisca Kwarteng is a hardworking and tactically astute player currently representing Ashtown Ladies, where she contributes to both defensive and midfield stability. She previously played for Soccer Angels (2020–2024), making 8 appearances, scoring 2 goals and providing 3 assists. Her football journey began at Oforikrom Ladies (2015–2017), where she gained valuable early experience in competitive football. A standout achievement came in 2022 when she was a key player in KNUST's GUSA Championship victory. Francisca holds a degree from Kwame Nkrumah University of Science and Technology (KNUST) and brings both academic discipline and athletic excellence to her game. She is exclusively represented by Solokra Management Firm. Contact: solokramanagementfirm1@gmail.com",
+    profile: "Francisca Kwarteng is a hardworking and tactically astute player currently representing Ashtown Ladies, where she contributes to both defensive full-back and midfield stability. She previously played for Soccer Angels (2020–2024), making 8 appearances, scoring 2 goals and providing 3 assists. Her football journey began at Oforikrom Ladies (2015–2017), where she gained valuable early experience in competitive football. A standout achievement came in 2022 when she was a key player in KNUST's GUSA Championship victory. Francisca holds a degree from Kwame Nkrumah University of Science and Technology (KNUST) and brings both academic discipline and athletic excellence to her game. She is exclusively represented by Solokra Management Firm. Contact: solokramanagementfirm1@gmail.com",
     cvUrl: "/cv/francisca-kwarteng.pdf",
     personalDetails: {
       fullName: "Francisca Kwarteng",

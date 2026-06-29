@@ -8,7 +8,6 @@ import SectionHeading from "@/components/SectionHeading";
 import player1 from "@/assets/player-1.png";
 import player2 from "@/assets/player-2.png";
 import player3 from "@/assets/player-3.png";
-import player4 from "@/assets/player-4.jpeg";
 import amoah from "@/assets/Amoah.jpg";
 import francisca from "@/assets/Francisca.png";
 import kelvin from "@/assets/Kelvin.jpg";
@@ -78,7 +77,6 @@ const images: GalleryImage[] = [
   { src: player1,  alt: "Antwi Clifford",           category: "Players", label: "Antwi Clifford" },
   { src: player2,  alt: "Owusu Roland",             category: "Players", label: "Owusu Roland" },
   { src: player3,  alt: "Thomas Blay",              category: "Players", label: "Thomas Blay" },
-  { src: player4,  alt: "Asante Collins",           category: "Players", label: "Asante Collins" },
   { src: amoah,    alt: "Christopher Amoah",        category: "Players", label: "Christopher Amoah" },
   { src: francisca,alt: "Francisca Kwarteng",       category: "Players", label: "Francisca Kwarteng" },
   { src: kelvin,   alt: "Mensah Kelvin Osei",       category: "Players", label: "Mensah Kelvin Osei" },
