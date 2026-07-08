@@ -1,4 +1,3 @@
-import player1 from "@/assets/player-1.png";
 import player2 from "@/assets/player-2.png";
 import player3 from "@/assets/player-3.png";
 import amoah from "@/assets/Amoah.jpg";
@@ -63,37 +62,6 @@ export interface Player {
 }
 
 export const players: Player[] = [
-  {
-    id: "antwi-clifford",
-    name: "Antwi Clifford",
-    position: "Midfielder",
-    nationality: "Ghanaian",
-    age: 19,
-    image: player1,
-    goals: 4,
-    assists: 9,
-    appearances: 16,
-    bio: "A dynamic box-to-box central midfielder with excellent passing range, strong vision, and the versatility to use both feet effectively. Antwi controls the game from the centre, linking defence with attack for Kumasi Angels.",
-    profile: "Antwi Clifford is a composed and intelligent central midfielder who has quickly established himself as a key figure for Kumasi Angels since joining the team. Playing a box-to-box role, he contributes on both ends of the pitch — intercepting opposition attacks and setting the tempo going forward. His excellent passing range over short and long distances, combined with high vision and awareness, make him a reliable playmaker. Antwi's ability to use both feet adds versatility and unpredictability to his game, while his strong stamina ensures he maintains a high work rate throughout the full 90 minutes. He is exclusively represented by Solokra Management Firm. Contact: solokramanagementfirm1@gmail.com",
-    cvUrl: "/cv/antwi-clifford.pdf",
-    personalDetails: {
-      fullName: "Antwi Clifford",
-      dateOfBirth: "8th August 2005",
-      placeOfBirth: "Ghana",
-      height: "5.5ft (1.68m)",
-      weight: "70 kg",
-      preferredFoot: "Both",
-      languages: ["English"],
-      contractUntil: "Ongoing",
-      marketValue: "50.000",
-    },
-    transfers: [
-      { season: "2023", from: "Youth Football", to: "Kumasi Angels", type: "Youth" },
-    ],
-    careerHistory: [
-      { club: "Kumasi Angels", seasons: "2023–Present", appearances: 16, goals: 4, assists: 9 },
-    ],
-  },
   {
     id: "owusu-roland",
     name: "Owusu Roland",

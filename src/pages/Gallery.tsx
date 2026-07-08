@@ -5,7 +5,6 @@ import AnimatedSection from "@/components/AnimatedSection";
 import SectionHeading from "@/components/SectionHeading";
 
 // Players
-import player1 from "@/assets/player-1.png";
 import player2 from "@/assets/player-2.png";
 import player3 from "@/assets/player-3.png";
 import amoah from "@/assets/Amoah.jpg";
@@ -74,7 +73,6 @@ const images: GalleryImage[] = [
   // Stadium
   { src: stadium,  alt: "Stadium atmosphere",      category: "Venues", label: "The Pitch" },
   // Players
-  { src: player1,  alt: "Antwi Clifford",           category: "Players", label: "Antwi Clifford" },
   { src: player2,  alt: "Owusu Roland",             category: "Players", label: "Owusu Roland" },
   { src: player3,  alt: "Thomas Blay",              category: "Players", label: "Thomas Blay" },
   { src: amoah,    alt: "Christopher Amoah",        category: "Players", label: "Christopher Amoah" },
