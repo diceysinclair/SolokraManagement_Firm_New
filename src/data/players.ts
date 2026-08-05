@@ -6,6 +6,8 @@ import kelvin from "@/assets/Kelvin.jpg";
 import august from "@/assets/August.png";
 import mathar from "@/assets/Mathar.png";
 import goalkeeper from "@/assets/goalkeeper.jpg";
+import fatawu from "@/assets/Fatawu.jpg";
+import gyama from "@/assets/Gyama.jpg";
 
 export interface Transfer {
   season: string;
@@ -115,8 +117,8 @@ export const players: Player[] = [
       fullName: "Thomas Blay",
       dateOfBirth: "28th August 2004",
       placeOfBirth: "Boako, Ghana",
-      height: "N/A",
-      weight: "N/A",
+      height: "1.85ft",
+      weight: "69.8 kg",
       preferredFoot: "Right",
       languages: ["English"],
       contractUntil: "Ongoing",
@@ -337,6 +339,67 @@ export const players: Player[] = [
     goalkeeperStats: [
       { period: "Last Season", games: 18, cleanSheets: 10, goalsConceded: 10 },
       { period: "Preseason", games: 5, cleanSheets: 3, goalsConceded: 0 },
+    ],
+  },
+  {
+    id: "fatawu-haruna",
+    name: "Fatawu Haruna",
+    position: "Goalkeeper",
+    nationality: "Ghanaian",
+    age: 15,
+    image: fatawu,
+    goals: 0,
+    assists: 0,
+    appearances: 0,
+    bio: "A modern, high-potential ball-playing goalkeeper standing at 1.88m. Fatawu combines an imposing physical presence with outstanding technical ability, composure in possession, and the maturity to organise a defensive line beyond his years.",
+    profile: "Fatawu Haruna is an offensive-minded, ball-playing goalkeeper who is comfortable playing outside his penalty area to intercept danger and support his team's defensive structure. His distribution is one of his standout qualities — accurately playing short and long passes, switching play, and launching quick counterattacks. Calm under pressure with strong aerial presence, quick reflexes, and vocal leadership, he functions as an additional outfield player during build-up. With continued elite coaching and exposure to high-level competition, Fatawu has the profile to become a top-level goalkeeper capable of performing in Europe's professional leagues. He is exclusively represented by Solokra Management Firm. Contact: solokramanagementfirm1@gmail.com",
+    cvUrl: "/cv/fatawu-haruna.pdf",
+    personalDetails: {
+      fullName: "Fatawu Haruna",
+      dateOfBirth: "6th June 2010",
+      placeOfBirth: "Ghana",
+      height: "1.88m",
+      weight: "N/A",
+      preferredFoot: "Both",
+      languages: ["English"],
+      contractUntil: "Ongoing",
+      marketValue: "N/A",
+    },
+    transfers: [],
+    careerHistory: [],
+  },
+  {
+    id: "gyamah-grandvelle",
+    name: "Gyamah Grandvelle",
+    position: "Midfielder",
+    nationality: "Ghanaian",
+    age: 13,
+    image: gyama,
+    goals: 5,
+    assists: 12,
+    appearances: 23,
+    bio: "An exciting young attacking midfielder with excellent vision, precise passing, and the creativity to unlock tight defences. At 1.79m, Gyamah combines physicality with technical skill, making him a standout performer in youth football.",
+    profile: "Gyamah Grandvelle is a dynamic and creative attacking midfielder who has quickly established himself as a key player to watch in youth competitions. His ability to read the game, combine vision with precision passing, and create opportunities for teammates makes him a standout performer. Intelligent movement, quick dribbling, and composed shooting from distance are hallmarks of his game. He links midfield to attack effectively, finds pockets of space, and thrives in possession-based systems while adapting well to fast transitions. Developed at E&A School before progressing to Adiabrem FC, he is currently showcasing his talent at Golden Kick Youth Team, where his vision, goal-scoring ability, and midfield dominance are attracting attention. His leadership potential, high football IQ, and blend of size and technical skill make him a promising prospect for future senior football. He is exclusively represented by Solokra Management Firm. Contact: solokramanagementfirm1@gmail.com",
+    cvUrl: "/cv/gyamah-grandvelle.pdf",
+    personalDetails: {
+      fullName: "Gyamah Grandvelle",
+      dateOfBirth: "30th April 2012",
+      placeOfBirth: "Ghana",
+      height: "1.79m",
+      weight: "N/A",
+      preferredFoot: "Right",
+      languages: ["English"],
+      contractUntil: "Ongoing",
+      marketValue: "N/A",
+    },
+    transfers: [
+      { season: "2023", from: "E&A School", to: "Adiabrem FC", type: "Youth" },
+      { season: "2024", from: "Adiabrem FC", to: "Golden Kick Youth Team", type: "Youth" },
+    ],
+    careerHistory: [
+      { club: "E&A School", seasons: "2022–2023", appearances: 0, goals: 0, assists: 0 },
+      { club: "Adiabrem FC", seasons: "2023–2024", appearances: 0, goals: 0, assists: 0 },
+      { club: "Golden Kick Youth Team", seasons: "2024–Present", appearances: 0, goals: 0, assists: 0 },
     ],
   },
 ];

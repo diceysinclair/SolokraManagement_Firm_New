@@ -13,6 +13,8 @@ import kelvin from "@/assets/Kelvin.jpg";
 import august from "@/assets/August.png";
 import mathar from "@/assets/Mathar.png";
 import gk from "@/assets/goalkeeper.jpg";
+import fatawu from "@/assets/Fatawu.jpg";
+import gyama from "@/assets/Gyama.jpg";
 
 // Staff & Branding
 import manager from "@/assets/Manager-1.jpg";
@@ -81,6 +83,8 @@ const images: GalleryImage[] = [
   { src: august,   alt: "Augustine Sosu",           category: "Players", label: "Augustine Sosu" },
   { src: mathar,   alt: "Nsobila Martha",           category: "Players", label: "Nsobila Martha" },
   { src: gk,       alt: "Emmanuel Adjetey Arthur",  category: "Players", label: "Emmanuel Adjetey Arthur" },
+  { src: fatawu,   alt: "Fatawu Haruna",            category: "Players", label: "Fatawu Haruna" },
+  { src: gyama,    alt: "Gyamah Grandvelle",        category: "Players", label: "Gyamah Grandvelle" },
   // Staff & Branding
   { src: manager,  alt: "Nana Antwi Boasiako",      category: "Staff",   label: "Nana Antwi Boasiako — CEO" },
   { src: logo,     alt: "Solokra Logo",             category: "Staff",   label: "Solokra Management Firm" },

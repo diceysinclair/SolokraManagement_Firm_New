@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import { Instagram, Twitter, Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react";
-import { NONAME } from "dns";
+
+const socialLinks = [
+  { Icon: Instagram, href: "https://www.instagram.com/solokramanagementfirm?igsh=bG9nZzFkZGJ1eWw3&utm_source=qr", label: "Instagram" },
+  { Icon: Facebook, href: "https://www.facebook.com/share/18fvfrgHyv/?mibextid=wwXIfr", label: "Facebook" },
+  { Icon: Twitter, href: "#", label: "Twitter" },
+  { Icon: Linkedin, href: "#", label: "LinkedIn" },
+];
 
 const Footer = () => (
   <footer className="bg-card border-t border-border">
@@ -38,8 +44,15 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-lg font-semibold mb-4 text-foreground">Follow Us</h4>
           <div className="flex gap-3">
-            {[Instagram, Twitter, Facebook, Linkedin].map((Icon, i) => (
-              <a key={i} href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
+            {socialLinks.map(({ Icon, href, label }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
+              >
                 <Icon size={18} />
               </a>
             ))}
