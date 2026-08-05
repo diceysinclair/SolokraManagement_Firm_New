@@ -66,7 +66,7 @@ const About = () => (
                 Under his mentorship, every player gains the discipline and focus needed to secure major contracts and achieve long-term success throughout their career. His hands-on approach ensures that each athlete under his care receives personalised attention and a clear roadmap to professional excellence.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                A proud Ghanaian based in Accra, Nana brings deep knowledge of African football talent and a passionate commitment to elevating Ghanaian athletes onto the world stage.
+                A proud Ghanaian based in Sefwi Boako, Nana brings deep knowledge of African football talent and a passionate commitment to elevating Ghanaian athletes onto the world stage.
               </p>
               <div className="mt-6 flex flex-wrap gap-6 text-sm">
                 <div>
