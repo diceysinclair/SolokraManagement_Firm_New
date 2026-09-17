@@ -15,13 +15,6 @@ export const testimonials: Testimonial[] = [
     club: "Al-Rayyan Sports Club",
   },
   {
-    id: "t2",
-    quote: "Nana Antwi saw potential in me when others didn't. Solokra Management Firm is more than an agency — they are family.",
-    author: "Thomas Blay",
-    role: "Defender",
-    club: "Memphis FC",
-  },
-  {
     id: "t3",
     quote: "Being represented by Solokra means having someone in your corner who truly fights for your future. I am proud to be part of this team.",
     author: "Francisca Kwarteng",

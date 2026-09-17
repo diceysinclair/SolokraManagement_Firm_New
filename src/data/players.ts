@@ -1,5 +1,4 @@
 import player2 from "@/assets/player-2.png";
-import player3 from "@/assets/player-3.png";
 import amoah from "@/assets/Amoah.jpg";
 import francisca from "@/assets/Francisca.png";
 import kelvin from "@/assets/Kelvin.jpg";
@@ -98,40 +97,6 @@ export const players: Player[] = [
       { club: "Memphis FC", seasons: "2022–2023", appearances: 0, goals: 0, assists: 0 },
       { club: "Kofi's FC", seasons: "2023–2024", appearances: 0, goals: 0, assists: 0 },
       { club: "Al-Rayyan Sports Club", seasons: "2024–Present", appearances: 10, goals: 4, assists: 3 },
-    ],
-  },
-  {
-    id: "thomas-blay",
-    name: "Thomas Blay",
-    position: "Defender",
-    nationality: "Ghanaian",
-    age: 20,
-    image: player3,
-    goals: 2,
-    assists: 1,
-    appearances: 14,
-    bio: "A commanding defender who combines defensive reliability with occasional attacking contributions. Thomas maintained a 100% clean sheet rate across 14 matches last season, earning 5 MVP awards for his consistent top performances.",
-    profile: "Thomas Blay is a versatile and dependable defender capable of playing both Center Back and Right Back with equal effectiveness. Representing Memphis FC, he has built a reputation for solid tackling, strong aerial ability, and excellent positional awareness. His leadership qualities and communication on the field make him a natural organiser at the back. Thomas contributed 2 goals and 1 assist last season — particularly effective in set-piece situations — while keeping a clean sheet in every single match he played. Previously with Real Zaragoza and Blessed Kickers FC, he brings experience beyond his years and aspires to progress to the highest level of the game. He is exclusively represented by Solokra Management Firm. Contact: solokramanagementfirm1@gmail.com",
-    cvUrl: "/cv/thomas-blay.pdf",
-    personalDetails: {
-      fullName: "Thomas Blay",
-      dateOfBirth: "28th August 2004",
-      placeOfBirth: "Boako, Ghana",
-      height: "1.85ft",
-      weight: "69.8 kg",
-      preferredFoot: "Right",
-      languages: ["English"],
-      contractUntil: "Ongoing",
-      marketValue: "$25,000",
-    },
-    transfers: [
-      { season: "2022", from: "Blessed Kickers FC", to: "Real Zaragoza", type: "Youth" },
-      { season: "2023", from: "Real Zaragoza", to: "Memphis FC", type: "Permanent" },
-    ],
-    careerHistory: [
-      { club: "Blessed Kickers FC", seasons: "2022", appearances: 0, goals: 0, assists: 0 },
-      { club: "Real Zaragoza", seasons: "2022–2023", appearances: 0, goals: 0, assists: 0 },
-      { club: "Memphis FC", seasons: "2023–Present", appearances: 14, goals: 2, assists: 1 },
     ],
   },
   {
@@ -338,7 +303,7 @@ export const players: Player[] = [
     ],
     goalkeeperStats: [
       { period: "Last Season", games: 18, cleanSheets: 10, goalsConceded: 10 },
-      { period: "Preseason", games: 5, cleanSheets: 3, goalsConceded: 0 },
+      { period: "Preseason", games: 5, cleanSheets: 3, goalsConceded: 2 },
     ],
   },
   {
@@ -346,17 +311,17 @@ export const players: Player[] = [
     name: "Fatawu Haruna",
     position: "Goalkeeper",
     nationality: "Ghanaian",
-    age: 15,
+    age: 14,
     image: fatawu,
     goals: 0,
     assists: 0,
-    appearances: 0,
+    appearances: 19,
     bio: "A modern, high-potential ball-playing goalkeeper standing at 1.88m. Fatawu combines an imposing physical presence with outstanding technical ability, composure in possession, and the maturity to organise a defensive line beyond his years.",
     profile: "Fatawu Haruna is an offensive-minded, ball-playing goalkeeper who is comfortable playing outside his penalty area to intercept danger and support his team's defensive structure. His distribution is one of his standout qualities — accurately playing short and long passes, switching play, and launching quick counterattacks. Calm under pressure with strong aerial presence, quick reflexes, and vocal leadership, he functions as an additional outfield player during build-up. With continued elite coaching and exposure to high-level competition, Fatawu has the profile to become a top-level goalkeeper capable of performing in Europe's professional leagues. He is exclusively represented by Solokra Management Firm. Contact: solokramanagementfirm1@gmail.com",
     cvUrl: "/cv/fatawu-haruna.pdf",
     personalDetails: {
       fullName: "Fatawu Haruna",
-      dateOfBirth: "6th June 2010",
+      dateOfBirth: "6th June 2012",
       placeOfBirth: "Ghana",
       height: "1.88m",
       weight: "N/A",
@@ -367,6 +332,10 @@ export const players: Player[] = [
     },
     transfers: [],
     careerHistory: [],
+    goalkeeperStats: [
+      { period: "Last Season", games: 14, cleanSheets: 9, goalsConceded: 7 },
+      { period: "Preseason", games: 5, cleanSheets: 4, goalsConceded: 2 },
+    ],
   },
   {
     id: "gyamah-grandvelle",
@@ -375,9 +344,9 @@ export const players: Player[] = [
     nationality: "Ghanaian",
     age: 13,
     image: gyama,
-    goals: 5,
-    assists: 12,
-    appearances: 23,
+    goals: 12,
+    assists: 16,
+    appearances: 38,
     bio: "An exciting young attacking midfielder with excellent vision, precise passing, and the creativity to unlock tight defences. At 1.79m, Gyamah combines physicality with technical skill, making him a standout performer in youth football.",
     profile: "Gyamah Grandvelle is a dynamic and creative attacking midfielder who has quickly established himself as a key player to watch in youth competitions. His ability to read the game, combine vision with precision passing, and create opportunities for teammates makes him a standout performer. Intelligent movement, quick dribbling, and composed shooting from distance are hallmarks of his game. He links midfield to attack effectively, finds pockets of space, and thrives in possession-based systems while adapting well to fast transitions. Developed at E&A School before progressing to Adiabrem FC, he is currently showcasing his talent at Golden Kick Youth Team, where his vision, goal-scoring ability, and midfield dominance are attracting attention. His leadership potential, high football IQ, and blend of size and technical skill make him a promising prospect for future senior football. He is exclusively represented by Solokra Management Firm. Contact: solokramanagementfirm1@gmail.com",
     cvUrl: "/cv/gyamah-grandvelle.pdf",
@@ -397,9 +366,9 @@ export const players: Player[] = [
       { season: "2024", from: "Adiabrem FC", to: "Golden Kick Youth Team", type: "Youth" },
     ],
     careerHistory: [
-      { club: "E&A School", seasons: "2022–2023", appearances: 0, goals: 0, assists: 0 },
-      { club: "Adiabrem FC", seasons: "2023–2024", appearances: 0, goals: 0, assists: 0 },
-      { club: "Golden Kick Youth Team", seasons: "2024–Present", appearances: 0, goals: 0, assists: 0 },
+      { club: "E&A School", seasons: "2022–2023", appearances: 14, goals: 5, assists: 7 },
+      { club: "Adiabrem FC", seasons: "2023–2024", appearances: 9, goals: 3, assists: 4 },
+      { club: "Golden Kick Youth Team", seasons: "2024–Present", appearances: 15, goals: 4, assists: 5 },
     ],
   },
 ];

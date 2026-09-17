@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { X, ZoomIn } from "lucide-react";
+import { X, ZoomIn, Play } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import SectionHeading from "@/components/SectionHeading";
 
 // Players
 import player2 from "@/assets/player-2.png";
-import player3 from "@/assets/player-3.png";
 import amoah from "@/assets/Amoah.jpg";
 import francisca from "@/assets/Francisca.png";
 import kelvin from "@/assets/Kelvin.jpg";
@@ -15,6 +14,10 @@ import mathar from "@/assets/Mathar.png";
 import gk from "@/assets/goalkeeper.jpg";
 import fatawu from "@/assets/Fatawu.jpg";
 import gyama from "@/assets/Gyama.jpg";
+import haruna200 from "@/assets/Haruna200.jpeg";
+import haruna201 from "@/assets/haruna201.jpeg";
+import haruna203 from "@/assets/Haruna203.jpeg";
+import harunavid from "@/assets/Harunavid.mp4";
 
 // Staff & Branding
 import manager from "@/assets/Manager-1.jpg";
@@ -69,6 +72,7 @@ interface GalleryImage {
   alt: string;
   category: Category;
   label?: string;
+  isVideo?: boolean;
 }
 
 const images: GalleryImage[] = [
@@ -76,7 +80,6 @@ const images: GalleryImage[] = [
   { src: stadium,  alt: "Stadium atmosphere",      category: "Venues", label: "The Pitch" },
   // Players
   { src: player2,  alt: "Owusu Roland",             category: "Players", label: "Owusu Roland" },
-  { src: player3,  alt: "Thomas Blay",              category: "Players", label: "Thomas Blay" },
   { src: amoah,    alt: "Christopher Amoah",        category: "Players", label: "Christopher Amoah" },
   { src: francisca,alt: "Francisca Kwarteng",       category: "Players", label: "Francisca Kwarteng" },
   { src: kelvin,   alt: "Mensah Kelvin Osei",       category: "Players", label: "Mensah Kelvin Osei" },
@@ -84,6 +87,10 @@ const images: GalleryImage[] = [
   { src: mathar,   alt: "Nsobila Martha",           category: "Players", label: "Nsobila Martha" },
   { src: gk,       alt: "Emmanuel Adjetey Arthur",  category: "Players", label: "Emmanuel Adjetey Arthur" },
   { src: fatawu,   alt: "Fatawu Haruna",            category: "Players", label: "Fatawu Haruna" },
+  { src: haruna200, alt: "Fatawu Haruna",           category: "Players", label: "Fatawu Haruna" },
+  { src: haruna201, alt: "Fatawu Haruna",           category: "Players", label: "Fatawu Haruna" },
+  { src: haruna203, alt: "Fatawu Haruna",           category: "Players", label: "Fatawu Haruna" },
+  { src: harunavid, alt: "Fatawu Haruna",           category: "Players", label: "Fatawu Haruna", isVideo: true },
   { src: gyama,    alt: "Gyamah Grandvelle",        category: "Players", label: "Gyamah Grandvelle" },
   // Staff & Branding
   { src: manager,  alt: "Nana Antwi Boasiako",      category: "Staff",   label: "Nana Antwi Boasiako — CEO" },
@@ -194,21 +201,38 @@ const Gallery = () => {
                     className="cursor-pointer overflow-hidden rounded-xl group relative border border-border hover:border-primary transition-all duration-300 shadow-sm hover:shadow-lg aspect-square"
                     onClick={() => setSelected(img)}
                   >
-                    <img
-                      src={img.src}
-                      alt={img.alt}
-                      loading="lazy"
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+                    {img.isVideo ? (
+                      <video
+                        src={img.src}
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <img
+                        src={img.src}
+                        alt={img.alt}
+                        loading="lazy"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    )}
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-3">
                       <p className="text-foreground font-heading text-xs font-semibold truncate">{img.label}</p>
                       <p className="text-primary text-xs font-medium uppercase tracking-wider mt-0.5">{img.category}</p>
                     </div>
-                    {/* Zoom icon */}
+                    {/* Zoom / Play icon */}
                     <div className="absolute top-2 right-2 w-7 h-7 bg-background/70 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm">
-                      <ZoomIn size={12} className="text-primary" />
+                      {img.isVideo ? <Play size={12} className="text-primary" /> : <ZoomIn size={12} className="text-primary" />}
                     </div>
+                    {/* Always-visible play badge for videos */}
+                    {img.isVideo && (
+                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div className="w-10 h-10 rounded-full bg-background/70 backdrop-blur-sm flex items-center justify-center border border-primary/50">
+                          <Play size={16} className="text-primary ml-0.5" />
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </AnimatedSection>
               ))}
@@ -268,11 +292,20 @@ const Gallery = () => {
               className="flex flex-col items-center gap-4 max-w-3xl w-full"
               onClick={(e) => e.stopPropagation()}
             >
-              <img
-                src={selected.src}
-                alt={selected.alt}
-                className="max-h-[75vh] max-w-full rounded-xl object-contain border border-border shadow-2xl"
-              />
+              {selected.isVideo ? (
+                <video
+                  src={selected.src}
+                  controls
+                  autoPlay
+                  className="max-h-[75vh] max-w-full rounded-xl border border-border shadow-2xl"
+                />
+              ) : (
+                <img
+                  src={selected.src}
+                  alt={selected.alt}
+                  className="max-h-[75vh] max-w-full rounded-xl object-contain border border-border shadow-2xl"
+                />
+              )}
               <div className="text-center">
                 <p className="text-foreground font-heading font-semibold">{selected.label}</p>
                 <p className="text-primary text-xs uppercase tracking-widest mt-1">{selected.category}</p>

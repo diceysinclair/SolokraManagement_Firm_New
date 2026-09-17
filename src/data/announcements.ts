@@ -22,13 +22,6 @@ export const announcements: Announcement[] = [
     category: "Transfer",
   },
   {
-    id: "3",
-    date: "2025-04-20",
-    title: "Thomas Blay Wins 5 MVP Awards in Debut Season",
-    summary: "Defender Thomas Blay has been recognised for his outstanding performances this season, winning 5 MVP awards across 14 matches — keeping a clean sheet in every game he played for Memphis FC. Solokra Management Firm congratulates Thomas on this remarkable achievement.",
-    category: "Award",
-  },
-  {
     id: "4",
     date: "2025-03-10",
     title: "Emmanuel Adjetey Arthur Joins PAC Academy",
